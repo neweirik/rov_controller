@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+ <master auto="start"/>
+  <node name="joy" pkg="joy" type="joy_node"/>
+  <node name="rov_joy_mapper" pkg="rov_controller" type="joystick_mapper"/>
+  <node name="rov_controller" pkg="rov_controller" type="rov_controller_node"/>
+</launch>
+
+
+
+
